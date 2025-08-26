@@ -18,7 +18,7 @@ public class UIStatus : MonoBehaviour
     {
         button.onClick.AddListener(ShowStatus);
 
-        if(GameManager.Instance != null)
+        if(GameManager.Instance != null && GameManager.Instance.Player != null)
         {
             UIChange();
         }
@@ -32,9 +32,9 @@ public class UIStatus : MonoBehaviour
     // === Status UI들 갱신 ===
     public void UIChange()
     {
-        atk.text = $"공격력 \n {GameManager.Instance.Player.Atk}";
-        def.text = $"방어력 \n {GameManager.Instance.Player.Def}";
-        hp.text = $"체력 \n {GameManager.Instance.Player.Hp}";
-        cri.text = $"크리티컬 \n {GameManager.Instance.Player.Cri}";
+        atk.text = $"공격력 \n{GameManager.Instance.Player.Atk}";
+        def.text = $"방어력 \n{GameManager.Instance.Player.Def}";
+        hp.text = $"체력 \n{GameManager.Instance.Player.Hp}";
+        cri.text = $"크리티컬 \n{GameManager.Instance.Player.Cri}";
     }
 }

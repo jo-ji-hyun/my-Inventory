@@ -18,7 +18,7 @@ public class UIMainMenu : MonoBehaviour
 
     private void Awake()
     {
-        if(GameManager.Instance != null)
+        if(GameManager.Instance != null && GameManager.Instance.Player != null)
         {
             UIChange();
         }
