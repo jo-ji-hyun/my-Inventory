@@ -17,9 +17,6 @@ public class UIManager : Singleton<UIManager>
     private UIInventory inventory;
     public UIInventory UIInventory { get { return inventory; } }
 
-    [HideInInspector]
-    public CharacterData character;
-
     // === ÆÄ±«ÇÏ¸é ¾ÈµÊ ===
     protected override bool IsDestroy => false;
 

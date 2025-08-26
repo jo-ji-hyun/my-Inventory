@@ -18,7 +18,7 @@ public class UIMainMenu : MonoBehaviour
 
     private void Awake()
     {
-        if(UIManager.Instance != null)
+        if(GameManager.Instance != null)
         {
             UIChange();
         }
@@ -55,11 +55,11 @@ public class UIMainMenu : MonoBehaviour
     // === MainMenu의 UI들 갱신 ===
     public void UIChange()
     {
-        money.text = $"{UIManager.Instance.character.Money:N0}";
-        title.text = $"{UIManager.Instance.character.Title}";
-        characterName.text = $"{UIManager.Instance.character.Name}";
-        level.text = $"{UIManager.Instance.character.Level}";
-        exp.text = $"{UIManager.Instance.character.Exp} / {UIManager.Instance.character.Level * 5}"; // 일단 레벨비례 5배로 설정
-        info.text = $"{UIManager.Instance.character.Info}";
+        money.text = $"{GameManager.Instance.Player.Money:N0}";
+        title.text = $"{GameManager.Instance.Player.Title}";
+        characterName.text = $"{GameManager.Instance.Player.Name}";
+        level.text = $"Lv.{GameManager.Instance.Player.Level}";
+        exp.text = $"{GameManager.Instance.Player.Exp} / {GameManager.Instance.Player.Level * 5}"; // 일단 레벨비례 5배로 설정
+        info.text = $"{GameManager.Instance.Player.Info}";
     }
 }

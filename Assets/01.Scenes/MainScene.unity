@@ -350,10 +350,11 @@ MonoBehaviour:
   status: {fileID: 1606510202}
   inventory: {fileID: 1985793203}
   money: {fileID: 779989681}
-  title: {fileID: 0}
-  characterName: {fileID: 0}
-  level: {fileID: 0}
-  info: {fileID: 0}
+  title: {fileID: 1546028302}
+  characterName: {fileID: 156840757}
+  level: {fileID: 617115817}
+  exp: {fileID: 726267737}
+  info: {fileID: 1610059112}
 --- !u!1 &234575601
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,8 +694,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38
-  m_fontSizeBase: 38
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -934,8 +935,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38
-  m_fontSizeBase: 38
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1691,8 +1692,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38
-  m_fontSizeBase: 38
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1941,7 +1942,7 @@ MonoBehaviour:
   m_Padding:
     m_Left: 15
     m_Right: 0
-    m_Top: 15
+    m_Top: 18
     m_Bottom: 0
   m_ChildAlignment: 0
   m_Spacing: 15
@@ -2324,8 +2325,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3196,6 +3197,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1948893376}
+  atk: {fileID: 655067731}
+  def: {fileID: 354649756}
+  hp: {fileID: 1808759365}
+  cri: {fileID: 412095914}
 --- !u!1 &1445881810
 GameObject:
   m_ObjectHideFlags: 0
@@ -4389,8 +4394,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38
-  m_fontSizeBase: 38
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
