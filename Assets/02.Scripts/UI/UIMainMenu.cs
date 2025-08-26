@@ -16,7 +16,7 @@ public class UIMainMenu : MonoBehaviour
     public TextMeshProUGUI exp;             // === 경험치 ===
     public TextMeshProUGUI info;            // === 정보 ===
 
-    private void Awake()
+    private void Start()
     {
         if(GameManager.Instance != null && GameManager.Instance.Player != null)
         {

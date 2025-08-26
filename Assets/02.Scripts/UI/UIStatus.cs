@@ -14,7 +14,7 @@ public class UIStatus : MonoBehaviour
     public TextMeshProUGUI hp;
     public TextMeshProUGUI cri;
 
-    void Awake()
+    void OnEnable()
     {
         button.onClick.AddListener(ShowStatus);
 

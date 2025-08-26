@@ -23,8 +23,14 @@ public class UIManager : Singleton<UIManager>
     protected override void Awake()
     {
         base.Awake();
+    }
 
-        mainMenu.OpenMainMenu();
+    private void Start()
+    {
+        if (GameManager.Instance.Player != null)
+        {
+            mainMenu.OpenMainMenu();
+        }
     }
 
 }
