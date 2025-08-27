@@ -13,7 +13,7 @@ public class Slot : MonoBehaviour
     public Image icon;                  // === 아이콘 표시 ===
     public TextMeshProUGUI equipped;    // === 장착중 표시 ===
 
-    private bool _isequipped;  // === 장착 여부 ===
+    private bool _isequipped;           // === 장착 여부 ===
 
     private void Start()
     {
@@ -24,7 +24,7 @@ public class Slot : MonoBehaviour
 
     private void UpdateEquipped()
     {
-        equipped.text = _isequipped ? "E" : "";
+        equipped.text = (_isequipped == true) ? "E" : "";
     }
 
     // === 버튼 클릭시 호출 ===
@@ -37,6 +37,8 @@ public class Slot : MonoBehaviour
             UpdateEquipped();
 
             GameManager.Instance.EquipItem(id);
+
+            UIManager.Instance.UIInventory.ShowItemInformation();
         }
         else
         {

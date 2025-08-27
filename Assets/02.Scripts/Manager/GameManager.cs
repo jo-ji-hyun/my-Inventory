@@ -21,14 +21,18 @@ public class GameManager : Singleton<GameManager>
 
     public void SetData()
     {
-        CharacterData newPlayer = new("초보자", "조지현", 1, 0, "코딩의 노예(진)", 20000, 5, 5, 50, 15);
+        Player = new("초보자", "조지현", 1, 0, "코딩의 노예(진)", 20000, 5, 5, 50, 15)
+        {
+            Inventory = new List<ItemData>()
+        };
 
-        Player = newPlayer;
     }
 
     public void EquipItem(int num)
     {
         ItemData item = allitems[num];
+
+        Player.AddItem(item);
 
         Player.Equip(item);
 
@@ -40,5 +44,9 @@ public class GameManager : Singleton<GameManager>
         ItemData item = allitems[num];
 
         Player.UnEquip(item);
+
+        Player.Inventory.Remove(item);
+
+        UIManager.Instance.Status.UIChange();
     }
 }

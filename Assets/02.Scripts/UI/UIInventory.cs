@@ -16,6 +16,12 @@ public class UIInventory : MonoBehaviour
     private void ShowInventory()
     {
         UIManager.Instance.MainMenu.OpenInventory();
-        miniStatus.SetActive(true);
+    }
+
+    public void ShowItemInformation()
+    {
+        miniStatus.SetActive(false);
+
+        miniStatus.SetActive(true);    // === 열릴때마다 갱신되므로 껏다 키기 ===
     }
 }
