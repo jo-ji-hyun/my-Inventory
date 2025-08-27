@@ -15,8 +15,8 @@ MonoBehaviour:
   id: 1
   itemName: "\uB098\uBB34 \uBC29\uD328"
   price: 1500
-  icon: {fileID: 0}
+  icon: {fileID: -74937373, guid: d4ccbebff14f3ab47bf9086645bb3eb7, type: 3}
   atk: 0
   def: 5
-  hp: 20
+  hp: 50
   cri: 0

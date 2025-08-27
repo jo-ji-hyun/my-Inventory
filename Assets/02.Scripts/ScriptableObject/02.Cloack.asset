@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcb93e650ce82474796f4b38306db6a1, type: 3}
-  m_Name: 00.WoodSword
+  m_Name: 02.Cloack
   m_EditorClassIdentifier: 
-  id: 0
-  itemName: "\uB098\uBB34 \uCE7C"
-  price: 1000
-  icon: {fileID: 0}
-  atk: 5
+  id: 2
+  itemName: "\uBD89\uC740 \uB9DD\uD1A0"
+  price: 2000
+  icon: {fileID: -871733267, guid: d4ccbebff14f3ab47bf9086645bb3eb7, type: 3}
+  atk: 0
   def: 0
-  hp: 0
-  cri: 0
+  hp: 100
+  cri: 15

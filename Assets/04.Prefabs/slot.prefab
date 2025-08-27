@@ -75,7 +75,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4280075041
-  m_fontColor: {r: 0.12782712, g: 0.7660377, b: 0.108401455, a: 1}
+  m_fontColor: {r: 0.94716984, g: 0.041103493, b: 0.056603577, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -282,6 +282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
+  icon: {fileID: 890757041895642145}
   equipped: {fileID: 7228547820746664860}
 --- !u!1 &5560126285107298229
 GameObject:

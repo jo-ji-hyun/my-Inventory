@@ -22,10 +22,8 @@ public class GameManager : Singleton<GameManager>
     public void SetData()
     {
         CharacterData newPlayer = new("초보자", "조지현", 1, 0, "코딩의 노예(진)", 20000, 5, 5, 50, 15);
-        
-        Player = newPlayer;
 
-        Player.AddItem(allitems[0]);
+        Player = newPlayer;
     }
 
     public void EquipItem(int num)

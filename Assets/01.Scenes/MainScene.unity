@@ -2430,6 +2430,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allitems:
   - {fileID: 11400000, guid: 9f352387e832ce14dbae44fd870c0ac2, type: 2}
+  - {fileID: 11400000, guid: 3b91994e8816a914c973c1908fa1d798, type: 2}
+  - {fileID: 11400000, guid: e0dbfb5e96e0bcf40a01886fce463997, type: 2}
+  - {fileID: 11400000, guid: e3f644c550931d645a472eeb168976e8, type: 2}
+  - {fileID: 11400000, guid: f88ad77026229554293646af59f7b5c6, type: 2}
+  - {fileID: 11400000, guid: bba1599a91eb1fd409e12566fa5a314d, type: 2}
+  - {fileID: 11400000, guid: 7ec40aeb445fe27468209f0d5e558644, type: 2}
+  - {fileID: 11400000, guid: 83cad3763ab71e94fa2b5bf549c046c6, type: 2}
+  - {fileID: 11400000, guid: 872489a78f9cfbe419f101f69e5530a4, type: 2}
+  - {fileID: 11400000, guid: 563f7149386ac9148ac8f3d18a3456d8, type: 2}
 --- !u!4 &771195048
 Transform:
   m_ObjectHideFlags: 0

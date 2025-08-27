@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcb93e650ce82474796f4b38306db6a1, type: 3}
-  m_Name: 03.
+  m_Name: 03.WoodHelmet
   m_EditorClassIdentifier: 
   id: 3
-  itemName: 
-  price: 0
-  icon: {fileID: 0}
+  itemName: "\uB098\uBB34 \uD22C\uAD6C"
+  price: 1200
+  icon: {fileID: 1667564570, guid: d4ccbebff14f3ab47bf9086645bb3eb7, type: 3}
   atk: 0
-  def: 0
-  hp: 0
+  def: 3
+  hp: 80
   cri: 0

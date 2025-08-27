@@ -6,18 +6,16 @@ using UnityEngine.UI;
 
 public class Slot : MonoBehaviour
 {
-    public int id; // === 아이템 식별 번호 ===
+    public int id;                       // === 아이템 식별 번호 ===
 
+    public Image icon;                  // === 아이콘 표시 ===
     public TextMeshProUGUI equipped;     // === 장착중 표시 ===
 
     private bool _isequipped;  // === 장착 여부 ===
 
     private void Start()
     {
-        if (GameManager.Instance.Player.Inventory[0].id == id)
-        {
-            _isequipped = true;
-        }
+        icon.sprite = GameManager.Instance.allitems[id].icon;
 
         UpdateEquipped();
     }

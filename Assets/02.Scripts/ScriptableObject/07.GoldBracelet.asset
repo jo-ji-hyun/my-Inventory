@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcb93e650ce82474796f4b38306db6a1, type: 3}
-  m_Name: 08.
+  m_Name: 07.GoldBracelet
   m_EditorClassIdentifier: 
-  id: 8
-  itemName: 
-  price: 0
-  icon: {fileID: 0}
+  id: 7
+  itemName: "\uAE08 \uD314\uCC0C"
+  price: 8000
+  icon: {fileID: -1312506936, guid: 46f61a621076e1a44b8196a69015d235, type: 3}
   atk: 0
-  def: 0
-  hp: 0
+  def: 10
+  hp: 200
   cri: 0

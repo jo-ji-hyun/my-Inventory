@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcb93e650ce82474796f4b38306db6a1, type: 3}
-  m_Name: 04.
+  m_Name: 00.WoodClaw
   m_EditorClassIdentifier: 
-  id: 4
-  itemName: 
-  price: 0
-  icon: {fileID: 0}
-  atk: 0
+  id: 0
+  itemName: "\uB098\uBB34 \uBC1C\uD1B1"
+  price: 1000
+  icon: {fileID: -1545841944, guid: 46f61a621076e1a44b8196a69015d235, type: 3}
+  atk: 5
   def: 0
   hp: 0
   cri: 0
