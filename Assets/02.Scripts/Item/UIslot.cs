@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class UIslot : MonoBehaviour
@@ -7,7 +8,7 @@ public class UIslot : MonoBehaviour
     [SerializeField]
     private GameObject slotPrefab;   // === 생성할 슬롯 ===
 
-    private int _slotnumber = 20;   // === 생성할 갯수 ===
+    private int _slotnumber = 10;   // === 생성할 갯수 ===
 
     public List<GameObject> _slotList;
 
@@ -34,6 +35,15 @@ public class UIslot : MonoBehaviour
 
     void RefreshUI()
     {
-        Debug.Log("slot 생성");
+        for (int i = 0; i < _slotnumber; i++)
+        {
+            // === id를 부여 ===
+            Slot slot = _slotList[i].GetComponent<Slot>();
+
+            if(i < GameManager.Instance.allitems.Count)
+            {
+                slot.id = i;
+            }
+        }
     }
 }

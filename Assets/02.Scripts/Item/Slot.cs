@@ -4,14 +4,23 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Items : MonoBehaviour
+public class Slot : MonoBehaviour
 {
-    [HideInInspector]
     public int id; // === 아이템 식별 번호 ===
 
     public TextMeshProUGUI equipped;     // === 장착중 표시 ===
 
     private bool _isequipped;  // === 장착 여부 ===
+
+    private void Start()
+    {
+        if (GameManager.Instance.Player.Inventory[0].id == id)
+        {
+            _isequipped = true;
+        }
+
+        UpdateEquipped();
+    }
 
     private void UpdateEquipped()
     {
@@ -24,12 +33,18 @@ public class Items : MonoBehaviour
         if (_isequipped == false)
         {
             _isequipped = true;
+
             UpdateEquipped();
+
+            GameManager.Instance.EquipItem(id);
         }
         else
         {
             _isequipped = false;
+
             UpdateEquipped();
+
+            GameManager.Instance.UnEquipItem(id);
         }
 
     }

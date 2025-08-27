@@ -2428,6 +2428,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb2fe2d36fffb3478134f5586fdd895, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allitems:
+  - {fileID: 11400000, guid: 9f352387e832ce14dbae44fd870c0ac2, type: 2}
 --- !u!4 &771195048
 Transform:
   m_ObjectHideFlags: 0
@@ -4540,7 +4542,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 120, y: 120}
+  m_CellSize: {x: 170, y: 160}
   m_Spacing: {x: 20, y: 20}
   m_Constraint: 0
   m_ConstraintCount: 2
