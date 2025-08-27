@@ -61,7 +61,7 @@ public class UIMainMenu : MonoBehaviour
         title.text = $"{GameManager.Instance.Player.Title}";
         characterName.text = $"{GameManager.Instance.Player.Name}";
         level.text = $"Lv.{GameManager.Instance.Player.Level}";
-        expBar.fillAmount = GameManager.Instance.Player.Exp / GameManager.Instance.Player.Level * 5;
+        expBar.fillAmount = (float) GameManager.Instance.Player.Exp / GameManager.Instance.Player.Level * 5;
         exp.text = $"{GameManager.Instance.Player.Exp} / {GameManager.Instance.Player.Level * 5}"; // 일단 레벨비례 5배로 설정
         info.text = $"{GameManager.Instance.Player.Info}";
     }
