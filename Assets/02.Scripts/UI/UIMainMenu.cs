@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIMainMenu : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class UIMainMenu : MonoBehaviour
     public TextMeshProUGUI title;           // === 칭호 ===
     public TextMeshProUGUI characterName;   // === 이름 ===
     public TextMeshProUGUI level;           // === 레벨 ===
+    public Image expBar;                    // === 경험치 통 ===
     public TextMeshProUGUI exp;             // === 경험치 ===
     public TextMeshProUGUI info;            // === 정보 ===
 
@@ -59,6 +61,7 @@ public class UIMainMenu : MonoBehaviour
         title.text = $"{GameManager.Instance.Player.Title}";
         characterName.text = $"{GameManager.Instance.Player.Name}";
         level.text = $"Lv.{GameManager.Instance.Player.Level}";
+        expBar.fillAmount = GameManager.Instance.Player.Exp / GameManager.Instance.Player.Level * 5;
         exp.text = $"{GameManager.Instance.Player.Exp} / {GameManager.Instance.Player.Level * 5}"; // 일단 레벨비례 5배로 설정
         info.text = $"{GameManager.Instance.Player.Info}";
     }

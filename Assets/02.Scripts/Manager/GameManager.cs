@@ -45,8 +45,6 @@ public class GameManager : Singleton<GameManager>
 
         Player.UnEquip(item);
 
-        Player.Inventory.Remove(item);
-
         UIManager.Instance.Status.UIChange();
     }
 }

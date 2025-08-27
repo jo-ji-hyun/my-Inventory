@@ -15,16 +15,14 @@ public class UIMiniStatus : MonoBehaviour
     {
         if(GameManager.Instance.Player.Inventory.Count > 0)
         {
-            if (GameManager.Instance.Player.Inventory[0] != null)
-            {
-                ItemData item = GameManager.Instance.Player.Inventory[0]; // === Player의 인벤토리는 항상 0만 있는다. ===
+            ItemData item = GameManager.Instance.Player.Inventory[0];
 
-                itemAtk.text = $"{item.atk}";
-                itemDef.text = $"{item.def}";
-                itemHp.text = $"{item.hp}";
-                itemCri.text = $"{item.cri}";
-            }
+            itemAtk.text = $"{item.atk}";
+            itemDef.text = $"{item.def}";
+            itemHp.text = $"{item.hp}";
+            itemCri.text = $"{item.cri}";
 
+            GameManager.Instance.Player.Inventory.RemoveAt(0);
         }
 
     }

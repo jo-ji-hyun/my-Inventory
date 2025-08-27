@@ -562,6 +562,7 @@ MonoBehaviour:
   title: {fileID: 1546028302}
   characterName: {fileID: 156840757}
   level: {fileID: 617115817}
+  expBar: {fileID: 2070792625}
   exp: {fileID: 726267737}
   info: {fileID: 1610059112}
 --- !u!1 &228471464
