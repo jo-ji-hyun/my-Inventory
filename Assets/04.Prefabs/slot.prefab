@@ -284,6 +284,9 @@ MonoBehaviour:
   id: 0
   icon: {fileID: 890757041895642145}
   equipped: {fileID: 7228547820746664860}
+  iteminfo: {fileID: 0}
+  iteminfoicon: {fileID: 0}
+  itemStatus: {fileID: 0}
 --- !u!1 &5560126285107298229
 GameObject:
   m_ObjectHideFlags: 0

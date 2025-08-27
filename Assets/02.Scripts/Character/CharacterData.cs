@@ -18,7 +18,6 @@ public class CharacterData
     public int Hp { get; set; }
     public int Cri { get; set; }
 
-
     public List<ItemData> Inventory;
 
     // === 칭호, 이름, 레벨, 경험치, 정보 ===
